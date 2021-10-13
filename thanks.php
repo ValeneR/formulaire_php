@@ -1,10 +1,10 @@
 <?php
-$firstname = $_GET['firstname'];
-$name = $_GET['name'];
-$subject = $_GET['subject'];
-$email = $_GET['courriel'];
-$phone_number = $_GET['phone_number'];
-$message = $_GET['message'];
+$firstname = $_POST['firstname'];
+$name = $_POST['name'];
+$subject = $_POST['subject'];
+$email = $_POST['courriel'];
+$phone_number = $_POST['phone_number'];
+$message = $_POST['message'];
 
 echo "Merci $firstname $name de nous avoir contacté à propos de '$subject'.
 

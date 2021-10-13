@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <form  action="thanks.php"  method="get">
+  <form  action="thanks.php"  method="post">
     <div>
       <label  for="name">Nom :</label>
       <input  type="text"  id="name"  name="user_name">
