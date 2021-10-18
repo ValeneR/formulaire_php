@@ -1,8 +1,6 @@
 <?php
 require_once 'Bicycle.php';
 $bike = new Bicycle('blue');
-var_dump($bike);
-
 $bike->setCurrentSpeed(0);
 var_dump($bike);
 
@@ -18,3 +16,7 @@ var_dump($rockrider);
 $tornado = new Bicycle('black');
 var_dump($tornado);
 
+require_once 'Cars.php';
+$car = new Car('red', 4, 'diesel');
+$car->setCurrentSpeed(0);
+var_dump($car);

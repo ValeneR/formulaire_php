@@ -1,6 +1,6 @@
 <?php
 class Car{
-    private int $nbWheels;
+    private int $nbWheels = 4;
     private int $currentSpeed;
     private string $color;
     private int $nbSeats;
@@ -13,14 +13,22 @@ class Car{
         $this->energy = $energy;
     }
 
-    public function forward(){
-
+    public function forward(): string{
+        $this->currentSpeed = 15;
+        return "Go!";
     }
-    public function brake() {
-
+    public function brake(): string {
+        $sentence = "";
+        while ($this->currentSpeed > 0) {
+            $this->currentSpeed--;
+            $sentence .= "Brake !!!";
+        }
+        $sentence .= "I'm stopped !";
+        return $sentence;
     }
-    public function start() {
-
+    public function start(): string {
+        $this->currentSpeed = 50;
+        return "Go!";
     }
 
     public function getNbWheels(): int {
